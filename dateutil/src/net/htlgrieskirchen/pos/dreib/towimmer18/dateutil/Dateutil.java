@@ -56,6 +56,6 @@ public class Dateutil {
 
         int seconds = (int) tempDateTime.until(toDateTime, ChronoUnit.SECONDS);
 
-        return LocalDateTime.of(years, Month.of(months), days, hours, minutes);
+        return LocalDateTime.of(years, Month.of(months), days, hours, minutes, seconds);
     }
 }
