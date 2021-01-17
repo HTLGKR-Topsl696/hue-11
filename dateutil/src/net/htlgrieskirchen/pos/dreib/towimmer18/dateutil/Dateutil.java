@@ -29,6 +29,10 @@ public class Dateutil {
         System.out.println("Hours: " + t.getHour());
         System.out.println("Minutes: " + t.getMinute());
         System.out.println("Seconds: " + t.getSecond());
+
+        for (; then.isBefore(now); then = then.plus(1, ChronoUnit.DAYS)) {
+            System.out.println(then.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+        }
         
         Scanner sc = new Scanner(System.in);
         String dateLine = sc.nextLine();

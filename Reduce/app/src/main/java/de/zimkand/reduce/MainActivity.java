@@ -31,16 +31,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private int ggT(int a, int b) {
+        // Beispiel: ggT(6, 8)
         if (a == 0) {
             return b;
         }
         while (b != 0) {
+            // 2. Iteration: a = 6, b = 2
+            // 3. Iteration: a = 4, b = 2
+            // 4. Iteration: a = 2, b = 2
+            // 5. Iteration: a = 2, b = 0
             if (a > b) {
                 a = a - b;
             } else {
                 b = b - a;
             }
         }
+        // return 2;
         return a;
     }
 }
